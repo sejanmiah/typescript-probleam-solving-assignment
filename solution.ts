@@ -31,3 +31,25 @@ console.log(getLength('typescript')); // 10
 console.log(getLength([10, 20, 30, 40])); // 4
 
 
+
+
+// Problem 3
+class Person {
+  name: string;
+  age: number;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+  getDetails(): string {
+    return `Name: ${this.name}, Age: ${this.age}`;
+  }
+}
+
+const person1 = new Person('Sejan Miah', 30);
+console.log(person1.getDetails()); // Name: Sejan Miah, Age: 30
+const person2 = new Person('Siam', 25);
+console.log(person2.getDetails()); // Name: Siam, Age: 25
+
+
+
