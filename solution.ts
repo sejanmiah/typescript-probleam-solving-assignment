@@ -75,3 +75,33 @@ const books = [
 
 console.log(filterByRating(books));
 // Output: [ { title: 'Book A', rating: 4.5 }, { title: 'Book C', rating: 5.0 } ]
+
+
+
+
+
+
+
+
+
+
+// Problem 5
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  isActive: boolean;
+}
+
+function filterActiveUsers(users: User[]): User[] {
+  return users.filter(user => user.isActive);
+}
+
+const users = [
+  { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
+  { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
+  { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
+];
+
+console.log(filterActiveUsers(users));
+// Output: [ { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true }, { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true } ]
